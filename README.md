@@ -21,7 +21,7 @@ Responsividade: O layout se adapta a dispositivos móveis, tablets e desktops, u
 
 O projeto foi construído utilizando as seguintes tecnologias:
 
-TML5: Para a estruturação semântica do conteúdo.
+HTML5: Para a estruturação semântica do conteúdo.
 CSS3: Para toda a estilização, utilizando conceitos modernos como:
 CSS Grid: Para o layout principal da página (header, main, footer).
 Flexbox: Para alinhamento de componentes internos (menu, cards, formulários).
