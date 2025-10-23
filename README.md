@@ -7,8 +7,7 @@ Plataforma web dedicada a conectar e dar visibilidade para Organizações Não G
 Projeto concluído. O site está funcional, com 3 páginas estáticas e design totalmente responsivo.
 
 📸 Prévia do Projeto
-
-img/preview_Captura de tela 2025-10-23 125039
+![Prévia da Tela Inicial](img/preview_Captura de tela 2025-10-23 125039.jpg)
 
 ✨ Funcionalidades Principais
 
