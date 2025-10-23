@@ -8,7 +8,7 @@ Projeto concluído. O site está funcional, com 3 páginas estáticas e design t
 
 📸 Prévia do Projeto
 
-(img/preview_Captura de tela 2025-10-23 125039)
+img/preview_Captura de tela 2025-10-23 125039
 
 ✨ Funcionalidades Principais
 
