@@ -1,0 +1,366 @@
+:root {
+    --color-primary: #0056b3;
+    --color-secondary: #007bff;
+    --color-text-dark: #333;
+    --color-text-light: #f8f9fa;
+    --color-background-light: #f8f9fa;
+    --color-background-dark: #343a40;
+    --color-border: #ced4da;
+    --color-success: #28a745;
+    --color-danger: #dc3545;
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+    --spacing-xl: 48px;
+    --font-family-base: 'Arial', sans-serif;
+    --border-radius-sm: 5px;
+    --box-shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-base);
+    line-height: 1.6;
+    color: var(--color-text-dark);
+    background-color: var(--color-background-light);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ffffff;
+    padding: var(--spacing-sm) var(--spacing-md);
+    box-shadow: var(--box-shadow-light);
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+header a img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: var(--spacing-md);
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: bold;
+    padding: var(--spacing-xs) 0;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: var(--color-secondary);
+}
+
+main {
+    padding: var(--spacing-lg) var(--spacing-md);
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main h2,
+main h3,
+main legend {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+main p {
+    margin-bottom: var(--spacing-sm);
+}
+
+footer {
+    background-color: var(--color-background-dark);
+    color: var(--color-text-light);
+    text-align: center;
+    padding: var(--spacing-md) 0;
+    margin-top: auto;
+}
+
+/* --- Estilos Página Index --- */
+.page-index main section {
+    background-color: var(--color-white);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    border-radius: var(--border-radius-sm);
+    box-shadow: var(--box-shadow-light);
+}
+
+.page-index main section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.page-index aside {
+    background-color: var(--color-white);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    box-shadow: var(--box-shadow-light);
+    border-left: 5px solid var(--color-secondary);
+    margin-bottom: var(--spacing-lg);
+}
+
+.page-index aside h2 {
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.page-index aside p {
+    margin-bottom: var(--spacing-xs);
+}
+
+.page-index aside a {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+
+/* --- Estilos Página Projetos --- */
+.page-projetos main section {
+    background-color: #ffffff;
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    border-radius: var(--border-radius-sm);
+    box-shadow: var(--box-shadow-light);
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+.page-projetos main section:first-of-type {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.page-projetos main section:last-of-type {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.page-projetos main section h2,
+.page-projetos main section > p {
+    grid-column: 1 / -1;
+}
+
+.page-projetos main article {
+    background-color: var(--color-background-light);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    border: 1px solid #dee2e6;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-projetos main article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.page-projetos main section:first-of-type article {
+    text-align: center;
+    align-items: center;
+}
+
+.page-projetos main section:first-of-type article img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--color-secondary);
+}
+
+.page-projetos main section:first-of-type article p {
+    flex-grow: 1;
+}
+
+.page-projetos main section:last-of-type article {
+    background-color: #ffffff;
+    border: none;
+    box-shadow: var(--box-shadow-light);
+}
+
+.page-projetos main section:last-of-type article img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.page-projetos main section:last-of-type article a {
+    font-weight: bold;
+    color: var(--color-secondary);
+}
+
+/* --- Estilos Página Cadastro --- */
+.page-cadastro main {
+    max-width: 800px;
+}
+
+.page-cadastro main section {
+    background-color: #ffffff;
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    border-radius: var(--border-radius-sm);
+    box-shadow: var(--box-shadow-light);
+}
+
+.page-cadastro main section:first-of-type {
+    text-align: center;
+}
+
+.page-cadastro main section:first-of-type img {
+    max-width: 100%;
+    height: auto;
+    max-height: 225px;
+    border-radius: var(--border-radius-sm);
+    margin: var(--spacing-sm) auto 0;
+    display: block;
+}
+
+.page-cadastro form {
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+.page-cadastro fieldset {
+    border: 1px solid var(--color-border);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    display: grid;
+    gap: var(--spacing-sm);
+}
+
+.page-cadastro legend {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0 var(--spacing-xs);
+    margin-left: var(--spacing-sm);
+}
+
+.page-cadastro fieldset div {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-cadastro fieldset div label {
+    font-weight: bold;
+    margin-bottom: var(--spacing-xs);
+}
+
+.page-cadastro fieldset div input,
+.page-cadastro fieldset div select {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-sm);
+    font-family: var(--font-family-base);
+}
+
+.page-cadastro fieldset div input:focus,
+.page-cadastro fieldset div select:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.page-cadastro fieldset div input:invalid {
+    border-color: var(--color-danger);
+}
+
+.page-cadastro fieldset div input:valid {
+    border-color: var(--color-success);
+}
+
+.page-cadastro button[type="submit"] {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.page-cadastro button[type="submit"]:hover {
+    background-color: var(--color-secondary);
+}
+
+
+/* --- Regras Responsivas Comuns --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: var(--spacing-sm);
+    }
+
+    header nav ul {
+        width: 100%;
+        flex-direction: column;
+        margin-top: var(--spacing-sm);
+        margin-right: 0;
+    }
+
+    header nav ul li {
+        margin: var(--spacing-xs) 0;
+    }
+
+    header a img {
+        margin-bottom: var(--spacing-sm);
+    }
+   
+    main {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+   
+    main section {
+        padding: var(--spacing-md);
+    }
+
+    .page-projetos main section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    main h2,
+    main h3,
+    main legend {
+        font-size: 1.5rem;
+    }
+
+    header a img {
+        height: 40px;
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .page-projetos main section:first-of-type article img {
+        width: 120px;
+        height: 120px;
+    }
+}
